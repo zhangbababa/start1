@@ -5,15 +5,20 @@
         <title>title</title>
     </head>
     <body>
+        <!-- 标题 -->
         <h1>1111</h1>
         <p>duanluo</p>
-        <a href="http://www.baidu.com"></a>
+        <!-- 超链接 -->
+        <a href="http://www.baidu.com" target="_blank">百度</a>
+        <!-- 图片 -->
         <img src="../a.jpg" title="这是一张图" alt="tupian">
+        <!-- 无序 ul ol下不能直接放div-->
         <ul>
             <li>1</li>
             <li>2</li>
             <li>3</li>
         </ul>
+        <!-- 有序 -->
         <ol>
             <li>1</li>
             <li>2</li>
@@ -22,11 +27,12 @@
           <!-- 区块 用来布局 div+vss -->
 
         <div>
-            我是 div
+            我是  div
         </div>
         <div>
-            我是div
+            我是  div
         </div>
+        <!-- 行元素，用来写文字 -->
         <span>
             卧床1
         </span>
@@ -43,12 +49,54 @@
                  <td>22</td>
              </tr>
              <tr>
-                    <td>11</td>
-                    <td>22</td>
-                </tr>
+                 <td>11</td>
+                 <td>22</td>
+             </tr>
          </table>
 
+         <!-- <form > -->
+            <div>
+                <label for="aa">用户名：</label>
+                <input id="aa" type="text">
+            </div>
+            <br>
+            <div>
+                 <span>密码：</span> <input type="password">
+            </div>
+            <!-- 单选框 -->
+            <input type="radio" name="sex">男
+            <input type="radio" name="sex">女
+            <br>
 
+            <!-- 复选框 -->
+            <input type="checkbox" name="hobby">zu
+            <input type="checkbox" name="hobby">lan
+            <input type="checkbox" name="hobby">yu
+            <!-- 下拉框 -->
+            <select>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+            </select>
+            <!-- 文本域 -->
+            <textarea></textarea>
+            <button>tijiao </button>
+            <input type="submit" value="提交表单">
+
+
+
+
+
+         <!-- </form> -->
+        <!-- 
+            行级元素 多个占一行
+            a  span  label  strong b 
+
+            块级元素 自己占一行
+            h1  p  ul  li  ol  div  table 
+            行级块元素
+            img  input 
+         -->
 
 
 
