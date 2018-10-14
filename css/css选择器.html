@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        /* 标签选择器 div span  */
+        div{
+            width: 300px;
+            height: 30px;
+            background:	#000000;
+        }
+        /* id选择器 在一个页面中id是唯一*/
+        #div1{
+            width: 300px;
+            height: 30px;         
+            background:#181818;
+        }
+
+        /* class选择器 相同的class名 就会同一个颜色 */
+        .aa{
+            width: 300px;
+            height: 30px;
+            background:#303030;
+        }
+        .bb{
+            width: 300px;
+            height: 30px;
+            background:#484848;
+        }
+        .cc{
+            width: 300px;
+            height: 1px;
+            background:white;
+        }
+        /* 后代选择器 (div=div5 #div5)  (相同的属性，用 ，合并) */
+        div span{
+            width: 300px;
+            height: 30px;
+            background:#606060;
+        }
+        /* zi代选择器 */
+        /* div>span{
+            color: pink;
+        } */
+        /* 分组选择器，群组选择器 */
+        p,ul{
+            width: 300px;
+            height: 30px;
+            background:palegreen;
+        }
+        /* p,ul    .bb .aa */
+        /* 伪类选择器 hover鼠标滑过 */
+        a:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>111</div>
+
+    <div class="cc"></div>
+
+    <div id="div1">222</div>
+
+    <div class="cc"></div>
+
+    <div class="aa">333</div>
+
+    <div class="cc"></div>
+
+    <div class="bb">444</div>
+
+    <div class="cc"></div>
+
+    <div>
+        <span>spansoan</span>
+        <a href="#">aaa</a>
+    </div>
+
+    <ul id="ul1">
+        <li class="bb">1111</li>
+        <li class="bb">2222</li>
+    </ul>
+</body>
+</html>
