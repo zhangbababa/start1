@@ -11,20 +11,43 @@
             }
             #div2{
                 height: 300px;
-                background: white url(https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head.png) no-repeat center center;
+                background: white url(https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head.png) no-repeat left center;
             }
-        
+            #div3{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 16px;
+                font-style:normal;
+                font-weight: 1000;
+                cursor: pointer;
+
+            }
+            #div4{
+                height: 300px;
+                background:black url(京东.png) no-repeat center right;
+            }
+            #div5{
+                height: 300px;
+                background: blue url(../a.jpg) no-repeat center center;
+            }
         </style>
     </head>
     <body>
         <!-- 标题 -->
         <h1>1111</h1>
-        <img src="https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head.png" title="图片" alt="图片">
+        <h1>2222</h1>
+        <h2>3333</h2>
+        <h3>4444</h3>
+        <img src="京东.png" title="京东" alt="京东">
+        <!-- div能插入图片 p能插入图片 span不能插入图片 -->
         <div id="div2">   </div>
+        <p id="div4">  </p>
+        <span id="div5">  </span>
         <!-- 控制图片位置时 除了div 还可以用什么 -->
         <h1 id="div1">京东</h1>
         <p>duanluo</p>
+        <p id="div3">duanluo</p>
         <!-- 超链接 -->
+        <a href="http://www.tmail.com" target="_blank">天猫</a>
         <a href="http://www.baidu.com" target="_blank">百度</a>
         <!-- 图片 -->
         <img src="../a.jpg" title="这是一张图" alt="tupian">
@@ -42,16 +65,12 @@
         </ol>
           <!-- 区块 用来布局 div+vss -->
 
-        <div>
-            我是  div
-        </div>
+        <div>我是  div</div>
         <div>
             我是  div
         </div>
         <!-- 行元素，用来写文字 -->
-        <span>
-            卧床1
-        </span>
+        <span>卧床1</span>
         <span>
             卧床1
         </span>
@@ -59,8 +78,11 @@
             行级元素 多个占一行
             块级元素 自己占一行
          -->
+         <!-- 表格 border边框 -->
          <table border="1">
+             <!-- 行 -->
              <tr>
+                 <!-- 列数 -->
                  <td>11</td>
                  <td>22</td>
              </tr>
@@ -112,6 +134,11 @@
             h1  p  ul  li  ol  div  table 
             行级块元素
             img  input 
+
+
+
+            h
+            p
          -->
 
 
