@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fixed</title>
+    <style>
+    /* 将浏览器默认的边框去掉 */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #div1{
+        /* 固定定位  相对于浏览器 定位后空间释放 */
+
+        width: 100px;
+        height: 400px;
+        margin-top: 200px;
+        background: pink;
+        position: fixed;
+        text-align: center;
+        line-height: 400px;
+
+
+    }
+    #div2{
+        static
+    }
+    body{
+        height: 20000px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="div1">ZSH</div>
+    
+</body>
+</html>

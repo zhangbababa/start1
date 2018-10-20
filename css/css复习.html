@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            #aa{
+                background: pink;
+
+            }
+            .bb{
+                background: red;
+                /* 去掉列表的点点 */
+                list-style: none;
+            }
+            /* 后代选择器 */
+            ul{
+                /* 改字体颜色 */
+                color: orange;
+                background: purple;
+            }
+            #cc li{
+                background: black;
+            }
+            #aa,.bb{
+
+            }
+            a:hover{
+
+            }
+            a{
+                /* 去掉下划线 */
+                text-decoration: none;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="aa">ZSH</div>
+    <ul>
+        <li class="bb">11</li>
+        <li>22</li>
+        <li class="bb">33</li>
+    </ul>
+
+    <ul id="cc">
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+    </ul>
+    
+    <a href="http://www.baidu.com">百度</a>
+
+
+    </body>
+
+</html>
