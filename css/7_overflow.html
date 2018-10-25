@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>overflow</title>
     <style>
         #div2{
             width: 200px;
-            height: 30px;
+            height: 40px;
             background: red;
-            line-height: 30px;
+            line-height: 40px;
             /* 溢出隐藏 */
-            overflow: hidden;            
+            /* overflow: hidden;             */
             /* 滚动条 */
             /* overflow: scroll; */
             /* 文本溢出，用 …… 代替 */
-            text-overflow: ellipsis;
+            /* text-overflow: ellipsis; */
             /* 强制显示在一行  不换行 */
-            white-space: nowrap;
+            /* white-space: nowrap; */
 
             /* 
                 overflow 溢出隐藏
-                文本溢出……
+                /* 文本溢出…… */
                 overflow: hidden;            
                 text-overflow: ellipsis;
                 white-space: nowrap;
 
             
              */
+        }
+        #div3{
+            width: 200px;
+            height: 30px;
+            background: pink;
+            line-height: 30px;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 溢出部分用省略号代替 */
+            text-overflow: ellipsis;
+            /* 强制显示在一行 */
+            white-space: nowrap;
         }
         #div1{
             width: 200px;
@@ -38,10 +50,10 @@
     </style>
 </head>
 <body>
-    <div  id="div2">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+    <div  id="div2">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
     <div id="div3">jashd fkjsadhfkj sdahfjksdhf kjsahfj</div>
     <div id="div1"> 哈发神经的        防护
-        阿斯蒂    芬斯蒂芬
+        阿斯蒂    芬斯蒂芬  zhang  sjhdfjwdhkj
     </div>  
 </body>
 </html>
