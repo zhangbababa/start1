@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>浮动</title>
     <style>
+        /* #div0{
+            height:50px;
+        } */
         #div1{
             width: 150px;
             height: 50px;
             background: black;
-            float: right;
+            float: left;
         }
         #div2{
             width: 150px;
             height: 50px;
             background: red;
-            float: right;
+            float: left;
 
         }
         #div3{
             clear: both;
         }
-        .clearfix::after{
+        #div0::after{
             content: "";
-            display: block;
-            clear: both;
         }
+ 
     </style>
     <!-- 
         float:left right
@@ -43,10 +45,10 @@
 
 </head>
 <body>
-    <div id="div0" class="clearfix">
+    <div id="div0">
         <div id="div1">1</div>
         <div id="div2">2</div>
-        <div id="div3"></div>
+        <!-- <div id="div3"></div> -->
     </div>
     <h1>hdjfjhaskjfhkajs</h1>
 

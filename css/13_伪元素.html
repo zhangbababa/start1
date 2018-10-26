@@ -9,16 +9,30 @@
         div{
             background: red;
         }
-        div::after{
-            content: '我是伪元素';
+        #div1::after{
+            content:"我是伪元素";
+            display: block；
         }
-    
+        #div0::after{
+            content:'我也是伪元素'；
+            display:block;
+
+        }
+        h1::after{
+            content:'我也是伪元素'；
+        }
+        .aa::after{
+            content: "我才是伪元素"；
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div id="div0">
         <div>111</div>
     </div>
-    
+    <span id="div1"><span>222</span></span>
+    <h1 class="aa">333</h1>
+    <div id="div1"><div>4444</div></div>
+
 </body>
 </html>
