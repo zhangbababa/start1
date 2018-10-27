@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>伪元素</title>
     <style>
         div{
             background: red;
         }
-        #div1::after{
-            content:"我是伪元素";
-            display: block；
-        }
         #div0::after{
+            content:"我是伪元素";
+            /* display: block； */
+        }
+        #div1::after{
             content:'我也是伪元素'；
             display:block;
 
@@ -32,7 +32,7 @@
     </div>
     <span id="div1"><span>222</span></span>
     <h1 class="aa">333</h1>
-    <div id="div1"><div>4444</div></div>
+    <div ><div id="div1">4444</div></div>
 
 </body>
 </html>
