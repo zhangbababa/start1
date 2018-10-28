@@ -1,0 +1,53 @@
+#search{
+    width: 1230px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    margin-left: -57px;
+}
+.search-box{
+    float: left;
+    margin-left: 70px;
+    margin-top: 33px;
+    overflow: hidden;
+
+}
+.search-txt{
+    width: 483px;
+    height: 26px;
+    border: 2px solid #ff0036;
+    padding: 5px 3px 5px 5px;
+    outline: none;
+    float: left;
+    font-size:14px;
+}
+.search-btn{
+    width: 128px;
+    height: 40px;
+    background: #ff0036;
+    color:#fff;
+    font-size: 18px;
+    border:2px solid #ff0036;
+    float: left;
+    /* 文字间的空隙 */
+    letter-spacing:5px;
+
+}
+.search-list{
+    margin-left: -12px;
+    margin-top:15px;
+
+}
+.search-list li{
+    float: left;
+    padding: 0 12px;
+    border-left: 1px solid #999;
+    margin-top:15px;
+
+    line-height: 1.1;
+
+}
+.search-list li.red a{
+    color:#ff0036;
+}
