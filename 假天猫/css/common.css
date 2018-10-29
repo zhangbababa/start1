@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* banner 开始 */
+.banner{
+    display: block;
+    height: 80px;
+    background:#ff2f7c url(../images/先锋1.jpg) center 0 no-repeat;
+}
