@@ -8,9 +8,59 @@ a{
 ul{
     list-style: none;
 }
+body{
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+}
 /* banner 开始 */
 .banner{
     display: block;
     height: 80px;
     background:#ff2f7c url(../images/先锋1.jpg) center 0 no-repeat;
 }
+/* banner 结束 */
+
+/* header 开始 */
+.header{
+    height: 40px;
+    background: #f2f2f2;
+    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.3);
+}
+.wrapper{
+    width: 1200px;
+    /* height: 40px; */
+    margin:0 auto;
+}
+.header-login{
+    height: 40px;
+    line-height: 40px;
+    font-size:12px;
+    float: left;
+}
+.header-login span,a{
+    color:#999;
+}
+.header-login a{
+    padding-left:20px;
+}
+.header-login a:hover{
+    color: #e54077;
+}
+.right{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+
+}
+.right>li{
+    float: left;
+    padding-left:40px;    
+    /* position: relative; */
+}
+.icon-qiche{
+    display: block;
+    font-size: 14px;
+}
+
+
+
+
