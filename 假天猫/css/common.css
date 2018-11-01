@@ -35,6 +35,7 @@ body{
     line-height: 40px;
     font-size:12px;
     float: left;
+    /* display: block; */
 }
 .header-login span,a{
     color:#999;
@@ -47,20 +48,145 @@ body{
 }
 .right{
     float: right;
+}
+.right li{
+    float: left;
+    position: relative;
+}
+.right>li>a{
+    color: #999;
+    display: block;
     height: 40px;
     line-height: 40px;
+    padding: 0 15px 0 20px;
+}
+.right a:hover{
+    color: #e54077;
+}
+.special a:hover{
+    color:#999;
+}
+.icon-jiafangjiashi,.icon-shouji{
+    color:red;
+    font-size: 12px;
+}
+.list-menu{
+    position: relative;
+}
+.list-menu:hover > a{
+    background: #fff;
+    text-decoration: underline;
+    color: #e54077;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    border-top-color: #999;
+    position: absolute;
+    /* left: 70px;
+    bottom: 14px; */
+    right:7px;
+    top: 20px;
+    transition: transform 0.2s ease;    
+}
+.list-menu:hover .triangle{
+    transform: rotate(180deg);
+    transform-origin: 50% 25%;
 
 }
-.right>li{
-    float: left;
-    padding-left:40px;    
-    /* position: relative; */
+.main-sub{
+    position:absolute;
+    padding: 10px 20px;
+    background: #fff;
+    width: 80px;
+    line-height: 30px;
+    display: none;
 }
-.icon-qiche{
+.list-menu:hover .main-sub{
     display: block;
-    font-size: 14px;
 }
+.list-menu .main-sub a:hover{
+    text-decoration: underline;
+}
+.main-sub2{
+    position:absolute;
+    width: 120px;
+    background: #fff;
+    padding: 5px 5px;
+    right: 0;
+    display: none;
+}
+.main-sub2 li{
+    padding-bottom: 10px;
+    /* margin-right: 20px;  */
 
+}
+.main-sub2 span{
+    display: block;
+}
+.mar-right{
+    margin-right:18px;
+}
+.main-sub2 a:hover{
+    text-decoration: underline;
+}
+.list-menu:hover .main-sub2{
+    display: block;
+}
+.photo-two{
+    position: absolute;
+    left: -30px;
+    top:30px;
+    box-shadow: 0 0 5px #aaa;
+    display: none;
+}
+.photo-two::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    left: 84px;
+    top: -8px;
+}
+.list-tel:hover .photo-two{
+    display: block;
+}
+.search{
+    /* position: absolute; */
+}
+.logo{
+    width: 280px;
+    height: 130px;
+    float: left;
+    margin-top: 5px;
 
-
+}
+.search-box{
+    float: left;
+    margin: 40px 0 0 70px;
+    width: 630px;
+    height: 40px;
+    border: 2px solid #ff0036;
+}
+.search-text{
+    height: 36px;
+    width: 480px;
+    outline:none;
+    border: none;
+    float: left;
+}
+.search-bot{
+    float: left;
+    width: 150px;
+    height: 40px;
+    background: #ff0036;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
 
