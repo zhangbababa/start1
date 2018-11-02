@@ -1,1 +1,45 @@
- 
+.header-1{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    width: 280px;
+    height: 130px;
+    float: left;
+    margin-top: 5px;
+    position: relative;
+    left: -42px;
+}
+.search-box{
+    float: left;
+    margin: 40px 0 0 70px;
+    width: 630px;
+    height: 40px;
+    border: 2px solid #ff0036;
+}
+.search-text{
+    height: 40px;
+    width: 480px;
+    outline:none;
+    border: none;
+    float: left;
+}
+.search-bot{
+    float: left;
+    width: 150px;
+    height: 40px;
+    background: #ff0036;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.search-list li{ 
+    float: left;
+    
+    /* position: absolute;
+    bottom:50px; */
+    /* display: inline-block; */
+    
+}

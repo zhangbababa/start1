@@ -11,6 +11,11 @@ ul{
 body{
     font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
 }
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
 /* banner 开始 */
 .banner{
     display: block;
@@ -157,36 +162,5 @@ body{
 .search{
     /* position: absolute; */
 }
-.logo{
-    width: 280px;
-    height: 130px;
-    float: left;
-    margin-top: 5px;
 
-}
-.search-box{
-    float: left;
-    margin: 40px 0 0 70px;
-    width: 630px;
-    height: 40px;
-    border: 2px solid #ff0036;
-}
-.search-text{
-    height: 36px;
-    width: 480px;
-    outline:none;
-    border: none;
-    float: left;
-}
-.search-bot{
-    float: left;
-    width: 150px;
-    height: 40px;
-    background: #ff0036;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 5px;
-}
 
