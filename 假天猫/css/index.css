@@ -6,8 +6,10 @@
     position: relative;
     left: -42px;
 }
-.search-box{
+.search{
     float: left;
+}
+.search-box{
     margin: 40px 0 0 70px;
     width: 630px;
     height: 40px;
@@ -18,7 +20,6 @@
     width: 480px;
     outline:none;
     border: none;
-    float: left;
 }
 .search-bot{
     float: left;
@@ -33,6 +34,7 @@
 }
 .search-list li{ 
     float: left;
+    
     
     /* position: absolute;
     bottom:50px; */
@@ -67,27 +69,36 @@
 }
 .cantent{
     width: 1200px;
-    height: 530px;
-    background: #000;
+    height: 496px;
+    background: #ff2f7c;
     margin: 0 auto;
 }
 .category{
-    width: 200px;
-    height: 530px;
-    background: purple;
+    width: 195px;
+    height: 496px;
+    /* background: purple; */
+    position:relative;
+    bottom: 32px;
 }
 .main-list h3{
-    width: 200px;
-    height: 36px;
+    width: 195px;
+    height: 32px;
     background: #ff0036;
-    line-height: 36px;
+    line-height: 34px;
     font-size: 16px;
     color: #fff;
 }
+.main-list{
+    background: rgba(0,0,0,0.55);
+
+}
 .main-list>li{
-    width: 200px;
+    width: 179px;
     height: 31px;
     padding: 0 8px;
+}
+.category .main-cate:hover{
+    background:#fff;
 }
 .main-list a{
     color: #fff;
@@ -107,6 +118,7 @@
 .category .main-cate:nth-child(5):hover>a{
     color:#6347ed;
 }
+
 .category .main-cate:nth-child(6):hover>a{
     color:#427def;
 }
