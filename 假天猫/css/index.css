@@ -8,12 +8,14 @@
 }
 .search{
     float: left;
+    margin: 40px 0 0 70px;
+    overflow: hidden;
 }
 .search-box{
-    margin: 40px 0 0 70px;
     width: 630px;
     height: 40px;
     border: 2px solid #ff0036;
+    /* overflow: hidden; */
 }
 .search-text{
     height: 40px;
@@ -22,7 +24,7 @@
     border: none;
 }
 .search-bot{
-    float: left;
+    float: right;
     width: 150px;
     height: 40px;
     background: #ff0036;
@@ -32,14 +34,27 @@
     font-weight: 700;
     letter-spacing: 5px;
 }
+.search-list{
+    margin-left: -13px;
+}
 .search-list li{ 
     float: left;
-    
+    font-size:14px;
+    padding: 0 12px;
+    margin: 10px 0px; 
+    line-height: 1.1;
+    border-left: 1px solid #999;
     
     /* position: absolute;
     bottom:50px; */
     /* display: inline-block; */
     
+}
+.search-list a{
+    color: #999;
+}
+.search-list .search-list-sp a{
+    color:#e54077;
 }
 .mar-list{
     padding-left: 200px;
@@ -80,7 +95,7 @@
     position:relative;
     bottom: 32px;
 }
-.main-list h3{
+.category h3{
     width: 195px;
     height: 32px;
     background: #ff0036;
@@ -203,6 +218,53 @@
 .category .main-cate:nth-child(16):hover>i{
     color:#3bc7b0;
 }
+.main-cate{
+    position: relative;
+}
+.main-list-sun{
+    background: blue;
+    height: 496px;
+    width: 800px;
+    position: absolute;
+    left: 195px;
+    top: 0;
+}
+.main-list-gr1{
+    background: pink;
+    width: 550px;
+    height: 496px;
+    float: left;
+    padding: 8px 8px;
+}
+.main-list-gr2{
+    background: palegoldenrod;
+    width: 200px;
+    height: 496px;
+    float: right;
 
-
+}
+.main-list-row{
+    margin:5px 0; 
+    border-top: 1px dashed rgba(0,0,0,0.1);
+    width: 550px;
+}
+.main-list-row>li{
+    float: left;
+    margin:2px 0; 
+    padding: 0 4px;
+    color: #999;
+    font-size: 14px;
+    /* font-weight: 700; */
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    /* line-height: 31px; */
+}
+.main-list-grtitle{
+    float: left;
+    width: 90px;
+    height: 35px;
+    padding-left:10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+}
 
