@@ -87,6 +87,7 @@
     height: 496px;
     background: #ff2f7c;
     margin: 0 auto;
+    position: relative;
 }
 .category{
     width: 195px;
@@ -94,6 +95,7 @@
     /* background: purple; */
     position:relative;
     bottom: 32px;
+    z-index: 2;
 }
 .category h3{
     width: 195px;
@@ -115,7 +117,7 @@
 .category .main-cate:hover{
     background:#fff;
 }
-.main-list a{
+.main-cate>a{
     color: #fff;
 }
 .category .main-cate:nth-child(1):hover>a{
@@ -228,14 +230,26 @@
     position: absolute;
     left: 195px;
     top: 0;
+    display: none;
 }
 .main-list-gr1{
-    background: pink;
+    background: #fff;
     width: 550px;
-    height: 496px;
+    height: 480px;
     float: left;
     padding: 8px 8px;
+    overflow: hidden;
 }
+.main-list-gr1>div{
+    /* overflow: hidden; */
+    /* border-bottom: 1px dashed rgba(0,0,0,0.1); */
+    padding-top: 14px;
+    /* display: none; */
+}
+.main-list li:hover .main-list-sun{
+    display: block;
+}
+
 .main-list-gr2{
     background: palegoldenrod;
     width: 200px;
@@ -244,27 +258,51 @@
 
 }
 .main-list-row{
-    margin:5px 0; 
-    border-top: 1px dashed rgba(0,0,0,0.1);
-    width: 550px;
+    padding-bottom:14.6px; 
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    width: 400px;
+    overflow: hidden;
 }
-.main-list-row>li{
+.main-list-row li{
     float: left;
-    margin:2px 0; 
     padding: 0 4px;
-    color: #999;
     font-size: 12px;
-    /* font-weight: 700; */
     font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
-    /* line-height: 31px; */
+
+}
+.main-list-row a{
+    color: #999;
 }
 .main-list-grtitle{
     float: left;
     width: 90px;
     height: 35px;
     padding-left:10px;
+    /* padding-top:8px; */
     font-size: 12px;
     font-weight: 700;
     font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
 }
+.main-list-row .main-list-color a{
+    color:#e54077;  
+}
+/* 轮播图 */
+.slide-box{
+    /* position: relative; */
+}
+.slide-box-img img{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 1200px;
+    height: 496px;
+}
+.slide-box-list{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+
+}
+
 
