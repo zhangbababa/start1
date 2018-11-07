@@ -224,7 +224,7 @@
     position: relative;
 }
 .main-list-sun{
-    background: blue;
+    background: #fff;
     height: 496px;
     width: 800px;
     position: absolute;
@@ -251,7 +251,7 @@
 }
 
 .main-list-gr2{
-    background: palegoldenrod;
+    background: #fff;
     width: 200px;
     height: 496px;
     float: right;
@@ -300,9 +300,197 @@
 .slide-box-list{
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 90%;
     transform: translateX(-50%);
 
 }
+.slide-box-list li{
+    width: 35px;
+    height: 5px;
+    float: left;
+    margin-left: 10px;
+    background: #000;
 
+}
+.slide-box-list li:hover{
+    color: #999;
+}
+.double-one{
+    width: 1200px;
+    height: 105px;
+    margin: 0 auto;
+    background: url(../images/11.11-1.png) center center no-repeat;
+    background-size:300px 65px;
+    display: block;
+}
+.special-sale-wrapper{
+    width: 595px;
+    height: 330px;
+    float: left;
+    margin-right: 5px;
+}
+.special-sale4{
+    width: 240px;
+    height: 330px;
+    /* background:#999 url(../images/spe-bg1.png) 0 0 no-repeat; */
+    display: block;
+    text-align: center;
+    float: left;
+    background-image: url(../images/spe-bg004.png);
+    position: relative;
+    margin-right: 7px;
+}
+.special-sale-title4{
+    color: #1d39e1;
+    padding-top: 32px;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: 1000;
+}
+.special-sale-words4{
+    color: #1d39e1;
+    font-size: 18px;
+    
+}
+.special-sale-bg{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.special-sale5{
+    width: 345px;
+    height: 160px;
+    display: block;
+    background: #888 url(../images/spe-bg005.png) 0 0 no-repeat;
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+}
+.special-sale-title5{
+    color: #00816a;
+    padding-top: 27px;
+    margin-left: 30px;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: 700;
+}
+.special-sale-words5{
+    color: #00816a;
+    font-size: 18px;
+    margin-left: 30px;
+}
 
+.special-sale6{
+    width: 345px;
+    height: 160px;
+    display: block;
+    background: #888 url(../images/spe-bg006.png) 0 0 no-repeat;
+    float: left;
+    position: relative;
+}
+.special-sale-title6{
+    color: #835600;
+    padding-top: 27px;
+    margin-left: 30px;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: 700;
+}
+.special-sale-words6{
+    color: #835600;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.special-sale{
+    width: 240px;
+    height: 330px;
+    /* background:#999 url(../images/spe-bg1.png) 0 0 no-repeat; */
+    display: block;
+    text-align: center;
+    float: left;
+    background-image: url(../images/spe-bg001.png);
+    position: relative;
+    margin-right: 7px;
+}
+.special-sale-title{
+    color: #ff7200;
+    padding-top: 32px;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: 1000;
+}
+.special-sale-words{
+    color: #ff7200;
+    font-size: 18px;
+    
+}
+.special-sale-photo{
+    width: 170px;
+    height: 180px;
+    margin: 20px 35px 0 35px;
+}
+.special-sale-bg{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.special-sale2{
+    width: 345px;
+    height: 160px;
+    display: block;
+    background: #888 url(../images/spe-bg002.png) 0 0 no-repeat;
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+}
+.special-sale-title2{
+    color: #e30c62;
+    padding-top: 27px;
+    margin-left: 30px;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: 700;
+}
+.special-sale-words2{
+    color: #e30c62;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.special-sale-photo2{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 15px;
+    right:15px;
+}
+.special-sale3{
+    width: 345px;
+    height: 160px;
+    display: block;
+    background: #888 url(../images/spe-bg003.png) 0 0 no-repeat;
+    float: left;
+    position: relative;
+}
+.special-sale-title3{
+    color: #e6010c;
+    padding-top: 27px;
+    margin-left: 30px;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: 700;
+}
+.special-sale-words3{
+    color: #e6010c;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.special-sale-photo3{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 15px;
+    right:15px;
+}

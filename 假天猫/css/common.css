@@ -78,6 +78,7 @@ body{
 }
 .list-menu{
     position: relative;
+    z-index: 3;
 }
 .list-menu:hover > a{
     background: #fff;
@@ -165,6 +166,9 @@ body{
 }
 .list-tel:hover .photo-two{
     display: block;
+}
+.list-tel{
+    z-index: 3;
 }
 
 
