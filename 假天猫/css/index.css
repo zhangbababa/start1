@@ -599,53 +599,181 @@
     font-weight: 700;
     color: #333;
 }
-.logos-list li{
-    float: left;
-    box-shadow: 0 0px 1px 0px rgba(0,0,0,0.05);
-    width: 119px;
-    background:#fff;
-    position: relative;
-    /* background: url(../image/logo-001.png) 1px 1px no-repeat; */
+.logos{
+    height: 325px;
+    margin-bottom: 15px;
 }
-.logos-list img{
+.logos li{
+    width: 119px;
+    height: 108px;
+    background:#fff;
+    /* line-height: 108px; */
+    overflow: hidden;
+    position: relative;
+    float: left;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,.1);
+    /* border: 1px rgba(0,0,0,.2) */
+}
+.logos li img{
     width: 82%;
     height: 50px;
-    display: block;
-    margin: 30px auto;
+    display: block;   
+    margin: 25px auto;
 }
-.logos-list-content{
-    text-align: center;
+.logos-mask{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    text-align: center;
     background: rgba(0,0,0,0.8);
     opacity: 0;
-    transition: opacity 0.5s ease ;
+    transition: opacity 0.4s ease;
 }
-.logos-write{
-    /* text-align居中要有宽高 */
+.logos-words{
+    margin:38px 0 5px 0 ;
     text-align: center;
     color: #fff;
-    margin-top: 38px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 .logos-enter{
     display: inline-block;
-    width: 63px;
-    height: 18px;
-    line-height: 18px;
+    width: 60px;
+    height: 20px;
     background: #ff0036;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+}
+.logos li:hover .logos-mask{
+    opacity: 1;
+}
+.huanyihuan1{
+    width: 82%;
+    height: 50px;
+    display: block;   
+    margin: 25px auto;
+    font-size: 32px;
+    color: #999;
+    text-align: center;
+}
+.logos-huanyihuan1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #999;
+}
+.logos-huanyihuan{
+    background: #ff0036;
+    opacity: 0;
+    transition: opacity 0.4s ease; 
+}
+.huanyihuan2{
+    width: 82%;
+    height: 50px;
+    display: block;   
+    margin: 25px auto;
+    font-size: 32px;
     color: #fff;
     text-align: center;
-        /* 圆弧 */
-    border-radius:9px;
-    margin-top:5px;
+    /* transform: rotate(0deg); */
+    transition: transform 0.4s ease;
+}
+.logos-huanyihuan2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #fff;
+}
+.logos-mask-huanyihuan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background:#ff0036;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 
 }
-.logos-list li:hover .logos-list-content{
+
+.logos li:hover .logos-mask-huanyihuan{
     opacity: 1;
+}
+.logos li:hover .logos-mask-huanyihuan .huanyihuan2{
+    transform: rotate(-1turn);
+}
+.mart{
+    height: 665px;
+}
+.mart-list{
+    height: 31px;
+    margin-bottom: 5px;
+}
+.mart-list img{
+    width: 214px;
+    height: 25px;
+    float: left;
+}
+.mart-list ul{
+    float: right;
+    
+}
+.mart-list li{
+    float: left;
+    line-height: 31px;
+    height: 31px;
+    /* padding-bottom: 3px; */
+    margin:0px 10px 0 10px;
+    font-size: 14px;
+}
+.mart-list a{
+    display: inline-block;
+    color: #000;
+    line-height: 20px;
+    height: 20px;
+}
+.bg1 .mart .mart-list a:hover{
+    border-bottom: 1px solid #000;
+    /* text-decoration: underline; */
+}
+.mart-photo{
+    position: relative;
+    width: 220px;
+    height: 618px;
+    display: inline-block;
+}
+.mart-photo img{
+    width: 220px;
+    height: 618px;
+    float: left;
+}
+.mart-photo-words{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top:400px;
+}
+.mart-photo-tmall{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(0,0,0,0.9);
+    vertical-align: middle;
+    line-height: 24px;
+}
+.mart-photo-happy{
+    display: inline-block;
+    width: 110px;
+    height: 64px;
 }
