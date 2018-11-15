@@ -711,7 +711,7 @@
     transform: rotate(-1turn);
 }
 .mart{
-    height: 654px;
+    height: 658px;
     margin-top: 30px;
 }
 .mart-list{
@@ -727,7 +727,7 @@
     float: right;
     
 }
-.mart-list li{
+.mart-list ul li{
     float: left;
     line-height: 31px;
     height: 31px;
@@ -748,7 +748,7 @@
 .mart-photo{
     position: relative;
     width: 220px;
-    height: 618px;
+    height: 620px;
     display: inline-block;
     float: left;
 }
@@ -757,7 +757,7 @@
 }
 .mart-photo img{
     width: 220px;
-    height: 618px;
+    height: 622px;
     float: left;
 }
 .mart-photo-words{
@@ -843,23 +843,31 @@
 .mart-one-hover a:hover{
     border: 1px solid red;
 }
+.hk{
+    width: 220px;
+    height: 622px;
+    float: left;
+}
 .hk-photo{
     position: relative;
     width: 220px;
-    height: 618px;
+    height: 304px;
     display: inline-block;
     float: left;
+    margin-bottom: 14px;
 }
 .hk-photo img{
     width: 220px;
-    height: 301px;
+    height: 304px;
     float: left;
+
 }
+
 .hk-photo-words{
     position: absolute;
     top: 0;
-    left: 0;
-    margin-top:200px;
+    left:   0;
+    margin-top:180px;
 }
 .hk-photo .mart-photo-more{
     position: absolute;
@@ -867,5 +875,44 @@
     bottom: 15px;
     width: 34px;
     height: 34px;
-    
+}
+.advertisement{
+    margin-top: 10px;
+}
+.advertisement{
+    overflow: hidden;
+    height: 90px;
+}
+.advertisement img{
+    display: block;
+    width: 1620px;
+    height: 90px;
+    margin-left: -178px;
+}
+.mart-list div{
+    width: 280px;
+    height: 25px;
+    float: left;
+    color: #000;
+}
+.mart-list span{
+    display: inline-block;
+}
+.beauty-ch{
+    margin: 0 10px;
+    font-size: 22px;
+    line-height: 25px;
+}
+.beauty-en{
+    font-size: 16px;
+    line-height: 25px;
+}
+.beauty-row{
+    height: 22px;
+    width: 5px;
+    background: #000;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    margin-top: 1.5px;
 }
