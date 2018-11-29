@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person1 = {
+            name:"zsh",
+            height:180,
+            sex:"man",
+            play:function(a){
+                console.log( this.name + " is learning css." + a );
+            }
+        }
+        // console.log(person1.name,person1.height);
+        person1.play("I LOVE STUDY.");
+    
+        //another creat object method
+        var person2 = new Object();
+        person2.name = "djh";
+        person2.sex = "man";
+        person2.height = 100;
+        person2.sleep = function(){
+            console.log("I'm sleeping.")
+        }
+        // console.log( person1.name,person2.name );
+        // person2.sleep();
+    </script>
+</body>
+</html>
