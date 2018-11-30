@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        b = 10;
+        console.log( b );
+        function fu(){
+            //局部作用域  局部变量 
+            var a = 10;
+            console.log( a );
+            //局部函数内的变量没有定义，则为全局变量
+            c = 30;
+        }
+        fu();
+        console.log( c );
+        //局部变量在全局不可调用
+        console.log( a );
+        
+    </script>
+</body>
+</html>
