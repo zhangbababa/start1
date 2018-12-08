@@ -28,15 +28,54 @@
         // console.log( a4.push(5) );
         // console.log( a4 );
         
-        // reverse()
-        var a5 = ["a","b","c"];
-        console.log( a5.reverse() );
-        console.log( a5 );
+        // reverse()  颠倒当前数组 并改变原数组
+        // var a5 = ["a","b","c"];
+        // console.log( a5.reverse() );
+        // console.log( a5 );
+        
+        // // slice() 截取选定部分的数组 取前不取后 不改变原数组
+        // var a5 = [0,1,2,3,4,5]
+        // console.log( a5.slice(1,3) );
+        // // 负数是从数组的尾部选取 -1即倒数第一个 -2倒数第二个
+        // console.log( a5.slice(-3,-1));
+        // console.log( a5 );
+        
+        // // sort() 默认按每个元素首字母排序 首字母相同排下一个字母 改变原数组
+        // var a6 = [22,32,1000,1122,111,4567]
+        // console.log( a6.sort() );
+        // console.log( a6 );
+        // // 从小到大排列
+        // var a7 = a6.sort( function(a,b){
+        //     return a-b;
+        // })
+        // console.log( a7 );
+        // // 从大到小排列
+        // var a8 = a6.sort( function(a,b){
+        //     return b-a;
+        // })
+        // console.log( a8 );
+        // // 数组是引用数据类型，在堆中排放，a7调用的是在a8改过基础上的a6，所以显示的是a8
+        // console.log( a7 );
+        // console.log( a6 );
+
+        // splice(index,howmany,item,...) 返回被删除的元素
+        // index：以数组元素的位置为标志，并取代该元素位置
+        // howmany：删除元素的个数
+        // item：要增加的元素
+        var a9 = [11,22,33,44,55,66];
+        // 添加一个元素
+        console.log( a9.splice( 3,0,34 ) );
+        console.log( a9 );
+        var a9 = [11,22,33,44,55,66];
+        // 删除两个元素
+        console.log( a9.splice( 1,2 ) );
+        console.log( a9 );
+        var a9 = [11,22,33,44,55,66];
+        // 替换两个元素
+        console.log( a9.splice( 1,2,77,88) );
+        console.log( a9 );
         
         
-        
-        
-    
     
     
     </script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            /* 解决塌陷 */
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            width: 110px;
+            height: 30px;
+            background: #ff0036;
+            margin-right: 5px;
+        }
+        #btn-box li.selected{
+            /* display: block; */
+            background: greenyellow;
+        }
+        #content div{
+            width: 340px;
+            height: 200px;
+            background: #ccc;
+            display: none;
+        }
+        #content div.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul id="btn-box">
+            <li class="selected">111</li>
+            <li>222</li>
+            <li>333</li>
+
+
+        </ul>
+        <div id="content">
+            <div class="active">content111</div>
+            <div>content222</div>
+            <div>content333</div>
+
+        </div>
+
+    </div>
+    <script>
+        var aLi = document.getElementsByTagName('li');
+        var oContent = document.getElementById('content');
+        var oDiv = oContent.getElementsByTagName('div');
+        for( var i = 0; i<aLi.length; i++){  //页面加载的时候就会执行，给三个li都绑定点击事件 i++变成3 
+            aLi[i].idx = i;// aLi[0].idx = 0   aLi[1].idx = 1    aLi[2].idx = 2
+            aLi[i].onclick = function(){
+                for(var j = 0; j<aLi.length; j++){
+                    aLi[j].className = "";
+                    oDiv[j].className = "";
+                }
+                // 点击的元素加上 selected 名
+                // i = 3； 所以aLi[i]  会返回underfined
+                // this指定当前对象的引用  点击的是谁  this就是谁
+                this.className = "selected";
+                oDiv[this.idx].className = "active";
+            }
+        }
+    </script>
+</body>
+</html>

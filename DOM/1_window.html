@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    haha 
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈</h1>
+    <button id="btn">
+        click
+
+    </button>
+    <button id="stop">
+            stop
+    
+    </button>
+    <script>
+        // 通过id获取元素
+        var timer = setInterval(function(){
+            console.log( Math.random() );    
+        },1000 )
+        
+        var oBtn = document.getElementById('stop');
+        var oStop = document.getElementById('stop');
+        oStop.onclick = function(){
+            console.log( timer );
+            // 清楚定时器
+            clearInterval( timer );
+
+        }
+        
+    
+    
+    </script>
+
+
+
+</body>
+</html>

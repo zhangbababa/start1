@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #container{
+            margin:100px auto;
+            width: 750px;
+            height: 291px;
+            position: relative;
+        }
+        #img-box img{
+            display: none;
+        }
+        #img-box .active{
+            display: block;
+        }
+        #btn-box li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,0.5);
+            margin-right: 5px;
+            color:#fff;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #btn-box .selected{
+            background: #ff0036;
+        }
+        #btn-box{
+            position: absolute;
+            right:10px;
+            bottom: 10px;
+        }
+        #arrow-box li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,0.5);
+            margin-right: 5px;
+            color:#fff;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #arrow-box{
+            position: absolute;
+            left: 10px;
+            bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="img-box">
+            <img class="active" src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+        </div>
+        <div id="btn-box">
+            <ul>
+                <li class="selected">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <ul id="arrow-box">
+            <li id="before">&lt;</li>
+            <li id="next">&gt;</li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        var oBtnbox = document.getElementById('btn-box');
+        var aBtn = oBtnbox.getElementsByTagName('li');
+        var aImg = document.getElementsByTagName('img');
+        var oContainer = document.getElementById('container');
+
+        for( var i = 0; i<aBtn.length; i++){
+            aBtn[i].index = i;
+            aBtn[i].onclick = function(){
+                // for( var j = 0; j<oBtn.length; j++){
+                //     oBtn[j].className = "";
+                //     oImg[j].className = "";
+                // }
+                // // this.className = "selected";
+                // oBtn[this.index].className = "selected";
+                // oImg[this.index].className = "active";
+                iNow = this.index;
+                iBfor = this.index;
+                change(this.index);
+            }
+        }
+
+        var oNext = document.getElementById('next');
+        var iNow = 0;
+        var timer;
+        oNext.onclick = function(){
+            iNow++;
+            if( iNow > 4 ){
+                iNow = iNow - 5;
+            }
+            // for( var k = 0; k<oBtn.length; k++){
+            //     oBtn[k].className = "";
+            //     oImg[k].className = "";
+            // }
+            // oBtn[iNow].className = "selected";
+            // oImg[iNow].className = "active";
+            change(iNow);
+        }
+
+        var oBefore = document.getElementById('before');
+        var iBfor = 5;
+        oBefore.onclick = function(){
+            iBfor--;
+            if( iBfor < 0 ){
+                iBfor = iBfor + 5;
+            }
+            change(iBfor);
+        }
+
+        // 定时器
+        run();
+        // 鼠标划入，清定时器
+        oContainer.onmouseover = function(){
+            clearInterval(timer);
+        }
+        oContainer.onmouseout = function(){
+            run();
+        }
+
+        function change(e){
+            for( var j = 0; j<aBtn.length; j++){
+                aBtn[j].className = "";
+                aImg[j].className = "";
+            }
+            aBtn[e].className = "selected";
+            aImg[e].className = "active";
+        }
+
+        function run(){
+            timer = setInterval(function(){
+                oNext.onclick();
+            },2000);
+        }
+    
+    
+    
+    </script>
+</body>
+</html>

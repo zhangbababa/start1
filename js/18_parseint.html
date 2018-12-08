@@ -9,10 +9,16 @@
 <body>
     <script>
         // 从前往后，转化成整型，
-        var str = "123";
-        console.log( parseInt(str));
+        var str = "123abc";
+        console.log( parseInt(str) );
+        var str1 = "a123abc";
+        console.log( parseInt(str1) );
+         
         // 从前往后，转化成小数
-        console.log( parseFloat(str));
+        var str2 = "123.4abc";
+        console.log( parseFloat(str2) );
+        var str3 = "123abc";
+        console.log( parseFloat(str3) );
     </script>
 </body>
 </html>
