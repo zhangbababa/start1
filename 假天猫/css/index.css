@@ -441,6 +441,9 @@
 .slide-box{
     /* position: relative; */
 }
+.slide-box-img{
+    
+}
 .slide-box-img img{
     position: absolute;
     left: 0px;
@@ -460,8 +463,12 @@
     height: 5px;
     float: left;
     margin-left: 10px;
-    background: #000;
+    background: #999;
+    cursor: pointer;
 
+}
+.slide-box-list .selected{
+    background: #fff;
 }
 .slide-box-list li:hover{
     color: #999;
