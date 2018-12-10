@@ -63,30 +63,26 @@
         var oRight = document.getElementById('right');
         // 内容复制
         oNumBox.innerHTML += oNumBox.innerHTML;
-        // 宽度 *2
-        oNumBox.style.width = oNumBox.offsetWidth * 2 + "px";
-
+        // 宽度 * 2
+        oNumBox.style.width = oNumBox.offsetWidth * 2 +"px";
         var speed = -3;
         setInterval(function(){
-           oNumBox.style.left = oNumBox.offsetLeft + speed +"px";
-           if( oNumBox.offsetLeft <= -oNumBox.offsetWidth/2){
-               oNumBox.style.left = 0;
-           }
-           if( oNumBox.offsetLeft > 0){
-               oNumBox.style.left = -oNumBox.offsetWidth/2 + "px";
-           }
+            oNumBox.style.left = oNumBox.offsetLeft + speed + "px";
 
+            if( oNumBox.offsetLeft <= -oNumBox.offsetWidth/2 ){  //比较条件
+                oNumBox.style.left = 0;
+            } 
+            else if ( oNumBox.offsetLeft > 0 ){
+                oNumBox.style.left = -oNumBox.offsetWidth/2 + "px";  //比较条件
+            }
         },20)
 
-        oRight.onclick = function(){
-            speed = 3;
-        }
         oLeft.onclick = function(){
             speed = -3;
         }
-    
-    
-
+        oRight.onclick = function(){
+            speed = 3;
+        }
     </script>
 </body>
 </html>
