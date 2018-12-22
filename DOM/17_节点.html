@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <!-- 这是注释 -->
+        <ul>
+            <li>111</li>
+        </ul>
+    </div>
+    <div id="div2">
+        div22222222
+        <div id="div3">
+            div3333
+        </div>
+    </div>
+
+
+    <script>
+        oDiv1 = document.getElementById('div1');
+        oDiv2 = document.getElementById('div2');
+        oDiv3 = document.getElementById('div3');
+
+        /*节点
+            nodeType 节点类型
+            元素节点    1
+            属性节点    2
+            文本节点    3
+        */
+    //    console.log( oDiv1.nodeType );
+    //    console.log( oDiv2.firstChild.nodeType );  //第一个孩子节点
+       
+    //    console.log( oDiv1.nodeName );  //DIV 节点名称
+    //    console.log( oDiv2.firstChild.nodeName );  //#text ———— 输出的是 回车+空格
+
+       //节点的遍历
+        // 1.nextSibling   nextElementSibling  dom3
+        // 2.previousSibling  previousElementSibling  dom3
+        // 3.firstChild firstElementChlid
+        // 4.lastChlid  lastElementChild
+
+        // alert( oDiv1.nextSibling ); // 输出的是 回车+空格
+        // oDiv1.nextSibling.style.background = "red";
+
+        // nextSibling  封装next  返回下一个元素节点
+        function next(elem){
+            do{
+                elem = elem.nextSibling;
+            }while( elem && elem.nextSibling != 1)
+            return elem;
+        }
+    </script>
+</body>
+</html>
