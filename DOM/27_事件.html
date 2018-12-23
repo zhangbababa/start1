@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" onclick="alert(123)">
+        哈哈
+    </div>
+    <div id="div2">
+        嘿嘿嘿
+    </div>
+
+    <script>
+        var oDiv = document.getElementById('div2');
+        // addEventListener  可以对同一东东绑定多个事件
+        oDiv.addEventListener('click',function(){
+            console.log(1111);
+        },false);
+        oDiv.addEventListener('click',function(){
+            console.log(1211);
+        },false)
+
+    
+    </script>
+</body>
+</html>
