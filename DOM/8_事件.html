@@ -7,10 +7,10 @@
     <title>Document</title>
     <style>
         #div1{
-            background: #000;
+            background: red;
             height: 200px;
             width: 200px;
-            display: none;
+            /* display: none; */
         }
     
     </style>
@@ -18,18 +18,22 @@
 <body>
     <!-- 事件
     三要素  事件源  事件处理函数  事件 -->
-
+    <!-- 事件源 -->
     <div id="div1">
         哈哈哈
     </div>
 
     <script>
         var oDiv = document.getElementById('div1');
-        oDiv.oncontextmenu = function(e){
+        // 事件处理函数
+        oDiv.onclick = function(e){
+            // alert("哈哈");
+            // console.log( e.target );
+            // clientX 鼠标点击时距屏幕左边的距离
+            // clientY 鼠标点击时距屏幕上边的距离
+            console.log( e.clientX );
+            console.log( e.clientY );
             
-
-
-            return false;  //阻止默认行为
         }
         
         
