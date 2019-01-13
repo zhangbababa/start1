@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <button id="animate">animate</button>
+    <div id="div1">111</div>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+
+        $('#hide').on('click',function(){
+            $('#div1').hide(1111);
+        })
+
+        $('#show').on('click',function(){
+            $('#div1').show(1111);
+        })
+
+        $('#tougle').on('click',function(){
+            $('#div1').toggle(1111);
+        })
+
+        $('#tougle').on('click',function(){
+            $('#div1').toggle(1111);
+        })
+
+        $('#animate').on('click',function(){
+            $('#animate').animate(
+                {
+                    height:100,
+                    width:100,
+                    opacity:0.5
+                }
+            )
+        })
+
+        $('#stop').on('click',function(){
+            /*
+              -clearqueue 清除队列  
+              -jumpToEnd 当前对象跳转到最后 false
+
+
+            */
+        })
+    </script>
+</body>
+</html>
