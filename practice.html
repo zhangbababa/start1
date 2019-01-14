@@ -10,86 +10,69 @@
                 margin: 0;
                 padding: 0;
             }
-            .diamond1{
-                width: 200px;
-                height: 200px;
-                border: 1px red solid;
-                z-index: 2;
-                /* float: left; */
+            body{
+                background: #4b3e97;
             }
-            .diamond2{
-                width: 200px;
-                height: 200px;
+            .all{
+                width: 900px;
+                height: 800px;
+                margin:0 auto;
+                border: 1px solid #000;
+                margin-top: 100px;
+            }
+            .photo{
+                width: 900px;
+                height: 300px;
+            }
+            .photo img{
+                height: 100%;
+                width: 100%;
+            }
+            .all .list{
+                width: 900px;
+                height: 50px;
+                background-color: #e3b11d;
+                line-height: 50px;
+            }
+            .list .list_ul{
+                list-style: none;
+                width: 500px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+            .list_ul li{
+                float: left;
+                padding-right: 10px;
 
-                /* border-top: 1px red solid;
-                border-right: 1px red solid;
-                border-bottom: 1px red solid;
-                float: left; */
-                border: 1px red solid;
-                position: absolute;
-                top: 0;
-                left: 201px;
             }
-            .diamond3{
-                width: 200px;
-                height: 200px;
-
-                /* border-left: 1px red solid;
-                border-right: 1px red solid;
-                border-bottom: 1px red solid;
-                float: left;  */
-                border: 1px red solid;
-                position: absolute;
-                top: 201px;
-                left: 0px;
-            }
-            .diamond4{
-                width: 200px;
-                height: 200px;
-
-                /* border-top: 1px red solid;
-                border-right: 1px red solid;
-                border-bottom: 1px red solid;
-                float: left; */
-                border: 1px red solid;
-                position: absolute;
-                top: 201px;
-                left: 201px;
-            }
-            .diamond0 div:hover{
-                border: 1px yellow solid;
+            .list_ul a{
+                text-decoration: none;
+                color: #fff;
             }
         </style>
     </head>
     <body>
-        <!-- <div class="diamond0">
-            <div class="diamond1"></div>
-            <div class="diamond2"></div>
-            <div class="diamond3"></div>
-            <div class="diamond4"></div>    
-        </div> -->
-        <script>
-        	var person1 = {
-		        name : "zsh",
-		        sex : "man",
-		        height : "180",
-		        play : function(){
-			    console.log( "I'm playing.");
-                }
-	        }
-	        // console.log( person1.name,person1.height );
-            // person1.play();
-            
-            var person2 = new Object();
-            person2.name = "djh";
-            person2.sex = "man";
-            person2.height = 180;
-            person2.sleep = function(){
-                console.log( "I'm sleeping.");
-            }
-            console.log( person1.name,person2.name );
-            person2.sleep(); 
-        </script>
+        <div class="all">
+            <div class="photo">
+                <img src="111.jpg" alt="">
+            </div>
+            <div class="list">
+                <ul class="list_ul">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">信息中心</a></li>
+                    <li><a href="">酒庄美酒</a></li>
+                    <li><a href="">人才招聘</a></li>
+                    <li><a href="">练习我们</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                    <!-- &nbsp;  一个空格-->
+                <p>培训支持保价航</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;培养通识类人才已经成为国际教育和中国教育发展的必然趋势。目前越来越多的大学在积极推行通识教育。</p>
+            </div>
+
+        </div>
 
     </body>
 </html>
