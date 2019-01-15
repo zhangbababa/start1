@@ -101,24 +101,27 @@
         $('#btn-box li').on('click',function(){
             change( $(this).index() );
 
-        })
+        });
         $('#next').on('click',function(){
             iNow++;
             if( iNow == $('img').length )
                 iNow = 0;
             change(iNow);
-
-
-
-        })
-    
+        });
+        $('#before').on('click',function(){
+            iNow--;
+            if( iNow == -1 )
+                iNow = 5;
+            change(iNow);
+        });
         function change(index){
             // siblings 找到所有兄弟
             $('#btn-box li').eq(index).addClass('selected').siblings().removeClass('selected');
             $('#img-box').stop().animate({
                 left:-index*$('img').width()
-            },1000)
+            },1000);
         }
+
     
     
     </script>

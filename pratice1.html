@@ -5,59 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>轮播图</title>
-		<style type="text/css">
-            body{background-color: #4b3e97;margin: 0px;}
-            .all{margin: 0 auto;width: 900px;height: 800px;}
-            .top{
-                width: 900px;
-                height: 230px;
-            }
-            .all .mid{background-color: #e3b11d;height: 20px;padding: 10px;margin: 0px;}
-            .all .mid li{list-style-type: none;color: #ffffff;margin: 20px;float: left;}
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            .all .foot{background-color: #886a10;height: 400px;padding: 10px;color: #FFFFFF;}
-            p{text-indent: 2em;
-            line-height: 1.3em;}
+        <style>
+            div { background:#def3ca; margin:3px; width:80px;
+            display:none; float:left; text-align:center; }
         </style>
-        <title></title>
     </head>
             
     <body>
-        <div class="all">
-            <div class="top">
-                <img src="111.jpg" alt="">
-            </div>
-            <div class="mid">
-                <ul>
-                    <li>首页</li>
-                    <li>公司简介</li>
-                    <li>信息中心</li>
-                    <li>酒庄美酒</li>
-                    <li>人才招聘</li>
-                    <li>关于我们</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <p>培训支持保价航</p >
-                <P>培养通识类人才已经成为国际教育和中国教育发展的必然趋势。目前越来越多的大学在积极推行通识教育。</p >
-            <p>高校通识教育的首要前提是把握并尊重大学生的思想特点，以便富有针对性地开展教育。理工科大学生除了具备一般大学生的基本特点之外，还具有一系列因理工科专业的特殊性而规定的特点。</p >
-            <ul>
-                <li>政策支持</li>
-                <ol>
-                    <li>科学的基本思维工具是逻辑，主要包括演绎和归纳。逻辑讲究从不证自明的基本原则出发经过环环相扣的必然性推理，最终获得关于事物的真理性知识。</li>
-                    <li>一般而言，理工科大学生大多从事数学、物理、机械、电气、计算机等可称之为科学的专业学习。科学的基本思维工具是逻辑，主要包括演绎和归纳。逻辑讲究从不证自明的基本原则出发经过环环相扣的必然性推理，最终获得关于事物的真理性知识。</li>
-                </ol>
-                <li>葡萄酒与健康</li>
-                <ol>
-                    <li>按照马克斯•韦伯对“合理性”概念的理解，“合理性”可分为“工具（合）理性”和“价值（合）理性”。</li>
-                    <li>工具理性指通过精确计算功效的方法来实现目的的理性。</li>
-                    <li>科学的基本思维工具是逻辑，主要包括演绎和归纳。逻辑讲究从不证自明的基本原则出发经过环环相扣的必然性推理，最终获得关于事物的真理性知识。</li>
-                </ol>
-            </ul>
-            </div>
-        </div>
+        <button id="showr">Show</button>
+        <button id="hidr">Hide</button>
+        <div>Hello 3,</div>
+        <div>how</div>
+        <div>are</div>
+        <div>you?</div>
+        <script src="jQuery/jquery-1.12.4.js"></script>
+        <script>
+            $("#showr").click(function () {
+                $("div").first().show("fast", function showNext() {
+                $(this).next("div").show("fast", showNext);
+                });
+            });
+            
+            $("#hidr").click(function () {
+                $("div").hide(1000);
+            });
+        </script>
+       
     </body>
 </html>

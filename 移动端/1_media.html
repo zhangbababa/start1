@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            background: red;
+        }
+        /* 设备方向  landscape 横屏 */
+        /* 设备宽度 <= 960px */
+        @media screen and (max-width:960px){
+            #div1{
+                background: #000;
+            }
+        }
+        /* 设备宽度 >= 320px */
+        @media screen and (min-width:320px){
+            #div1{
+                background: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        viewport  width=device-width  页面的宽度 = 设备的宽度
+        initial-scale=1.0  初始缩放比例 
+        
+        
+        
+        
+        
+    -->
+    <div id="div1">hahah</div>
+</body>
+</html>
