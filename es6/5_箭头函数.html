@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"></button>
+    <script>
+        // function a(){
+        //     console.log('a');
+            
+        // }
+        // var b = function(){
+        //     console.log('b');
+        // }
+
+        // var fn2 = ([x,y=5]) =>{
+        //     console.log(x,y);
+        // }
+
+
+        /* 
+            箭头函数this指向：
+                箭头函数中 this 指的是声明时的this  父作用域中的this
+                普通函数中 this 指的是调用时的this
+            箭头函数不能用于构造函数
+            箭头函数
+            
+        */
+    
+        var oBtn = document.getElementById('btn');
+        // this 指向 window
+        oBtn.onclick = () =>{
+            setTimeout(() => {
+                console.log(this);
+            }, 1000);
+        }
+
+
+        var obj = {
+            name:'zxs',
+            age:10,
+            say:function(){
+                setTimeout(()=>{
+                    console.log(this);
+                })
+            }
+        }
+        obj.say();
+
+
+        /* this指向问题
+            函数中的window
+            点击事件this 指向谁的点击事件this指向谁
+            定时器中this window
+            在对象当中this指向当前对象
+
+        */
+
+        var fn = (...rest)=>{
+            console.log( )
+        }
+    
+    </script>
+</body>
+</html>

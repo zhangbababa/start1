@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        /*扩展运算符： ...
+            1.复制数组
+            2.作为数组的一部分
+            3.合并数组和对象
+            4.类数组转化成数组
+        */
+        // let arr = [1,2,3];
+        // console.log(...arr);
+
+        // let arr2 = [...arr,4,5];
+        // console.log(arr2);
+
+        // let arr3 = ['a','b','c'];
+        // let arr4 = arr3; 
+
+        // var aLi = document.getElementsByTagName('li');
+        // var arr = [...aLi];
+        // arr.push('sdfsf');
+        // console.log(arr);
+
+        // rest 运算符 有其他的会返回剩余的
+        // function fn(...rest){
+        //     console.log(a,b,rest);
+
+        // }
+        // fn(1,2,3,4,5,6);
+        // function fn(a,b,...rest){
+        //     console.log(a,b,rest);
+
+        // }
+        // fn(1,2,3,4,5,6);
+
+        // arguments 参数 类数组
+        // arguments.callee 返回函数自己
+        function fn(){
+            console.log(arguments);
+        }
+        fn();
+        
+
+        
+    
+    </script>
+</body>
+</html>

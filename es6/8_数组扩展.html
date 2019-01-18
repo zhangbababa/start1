@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+    <script>
+        // var aLi = document.getElementsByTagName('li');
+        // // 类数组（不是真正的数组） 转换成真正的数组
+        // var a = Array.from(aLi) ;
+        // a.push('ha');
+        // console.log( a );
+
+        // var arr = new Array(3);
+
+        // console.log(arr);
+        // // 创建并赋值数组
+        // console.log(Array.of(3));
+
+        var arr = ['a','b','c','d','e','f','g'];
+        // console.log( arr );
+        // console.log( arr.copyWithin(0,2,6));
+
+        // arr.fill('xx',1,4);
+        // console.log(arr.fill('xx',1,4));
+        
+
+        
+        // for(  var val of arr){
+        //     console.log( val,arr );
+        // }
+        // // 传出索引
+        // for( var index of arr.keys() ){
+        //     console.log(index);
+        // }
+        // for( var [index,val] of arr.entries() ){
+        //     console.log(index,val);
+        // }
+
+
+        arr.forEach(function(val,index){
+            console.log(val,index)
+        })
+         var result = arr.map(function(val,index){
+            return val+"xx";
+
+        })
+        console.log(result);
+
+        var result1 = arr.filter(function(val,index){
+            return index>1;
+        })
+        console.log(arr);
+        
+        console.log(result1);
+        
+        var result2 = arr.filter(function(val,index){
+            
+        })
+
+
+
+    </script>    
+</body>
+</html>

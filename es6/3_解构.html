@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2];
+        // let[a,b] = arr;
+        // console.log(a,b);
+        // 把数组中的值取出来赋给变量
+        let arr1 = [1,2,[3,4],5];
+        let [a,b,[c,d],e] = arr1;
+        console.log(a,b,c,d,e);
+        
+        // 默认值 underfined
+        let [,x,y=8] = arr;
+        console.log(x,y);
+    
+        let p1 = {
+            name:'zs',
+            age:20
+        }
+        // 解构时的变量要对应上
+        let{name,age:n} = p1;
+        // console.log(name,n);
+
+        let str = "hij";
+        let [o,p] = str;
+        // console.log(o,p);
+        
+
+        function fn([a,b]){
+            console.log('a='+a, 'b='+b);
+        }
+        fn([10,5]);
+
+        let abc = {
+            name:10,
+            age:5
+        }
+        let {name:m,age:q} = abc;
+        console.log('a='+m, 'b='+q);
+
+        let r = 5;
+        let u = 10;
+        // var t;
+        // t = u;
+        // u = r;
+        // r = t;
+        // console.log( r,u );
+
+        // r = r + u; 
+        // u = r - u; 
+        // r = r - u; 
+        // console.log( r,u );
+
+        // r = [u,u = r][0];
+        // console.log( r,u );
+
+
+
+
+
+
+        
+    
+    
+    </script>
+</body>
+</html>
