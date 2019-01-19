@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        // var name = "zs";
+        // var age = 10;
+        // var sc = 'school';
+        // var obj = {
+        //     name:name,
+        //     age:age,
+        //     sc:'weichuang',
+        //     say:function(){
+        //         console.log( this.name );
+        //     }
+        // }
+        // // 属性名与变量名同名
+        // var obj2 = {
+        //     name,
+        //     age,
+        //     // [] 将 sc 属性改成 school 
+        //     [sc]:'weichuang'
+        // }
+        // console.log(obj);
+        // console.log(obj2[sc]);
+        
+        // console.log(obj2);
+
+        //Object比较两个值是否相等
+        // 不等于
+        console.log( NaN === NaN );
+        console.log( -0 === +0 );
+        console.log(Object.is(NaN,NaN));
+        console.log(Object.is(-0 === +0));
+
+
+        var obj1 =  {
+            name:'zs',
+            age:20
+        }
+        var obj2 = {
+            name:'lisi',
+            school:'weichuang'
+        }
+
+        var obj3 = {...obj1,...obj2};
+        console.log(obj3);
+
+        
+    </script>
+</body>
+</html>
